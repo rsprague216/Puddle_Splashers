@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Puddle Splashers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./resources/css/styles.css" />
+  </head>
+  <body>
+
+    <header>
+      <div class="page-name">Puddle Splashers Swim Club</div>
+      <img src="./resources/images/club_logo.webp" class="logo" />
+      <nav>
+        <a href="index.html" class="extra-link">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Results</a>
+        <a href="#" class="extra-link small-return">Sponsors</a>
+        <a href="#" class="extra-link small-return">Login</a>
+      </nav>
+      <nav class="hidden">
+        <a href="#">Sponsors</a>
+        <a href="#">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- bootstrap carousel -->
+      <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./resources/images/slide-1.avif" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <div class="slide1 backdrop">
+                <h1 class="title outline-2">Puddle Splashers Swim Club!</h1>
+                <h3 class="subtitle outline-1">Ready to make a splash?</h3>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./resources/images/slide-2.avif" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <div class="slide2 grid">
+                <div class="backdrop">
+                  <h1 class="title outline-2">Make waves together!</h1>
+                  <h5 class="subtitle outline-1">Group swim sessions and fun outings!  Let's go on an adventure!</h5>
+                  <a href="#">SIGN UP</a>
+                </div>
+              </div>
+              <!-- <p>Some representative placeholder content for the second slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item three">
+            <img src="./resources/images/slide-3.avif" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <div class="slide3 grid">
+                <div class="backdrop">
+                  <h1 class="title outline-2">Unlock your inner champion</h1>
+                  <h5 class="subtitle outline-1">Join the regular swim meets for some friendly competitions.</h5>
+                  <a href="#">Events Schedule!</a>
+                </div>
+              </div>
+              <!-- <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev control-button" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next control-button" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </main>
+
+    <section class="info">
+      <h1 class="title outline-2">Here are some of our common Events</h1>
+      <div class="events">
+        <div class="event open-water">
+          <div class="img-container">
+            <img src="./resources/images/open-water.avif" />
+          </div>
+          <div class="event-details">
+            <h5>Open Water Swims</h5>
+            <p>Open water swims take place in lakes, rivers, or the ocean, offering a unique and adventurous swimming experience. These events help swimmers build endurance and enjoy the beauty of nature while swimming in a group setting.</p>
+          </div>
+        </div>
+        <div class="event lap-swim">
+          <div class="img-container">
+            <img src="./resources/images/lap-swim.avif" />
+          </div>
+          <div class="event-details">
+            <h5>Group Swim Sessions</h5>
+            <p>Group swim sessions are designed for swimmers of all levels to practice together in a supportive environment. These sessions focus on improving technique, building stamina, with Coaches to provide guidance and structured workouts, making it a great way to stay motivated and have fun while swimming.</p>
+          </div>
+        </div>
+        <div class="event swim-meet">
+          <div class="img-container">
+            <img src="./resources/images/swim-meet.avif" />
+          </div>
+          <div class="event-details">
+            <h5>Swim Meets</h5>
+            <p>Swim meets are competitive events where swimmers can showcase their skills and compete against others. These meets are casual events for fun with ribbons and medals, providing opportunities for swimmers to achieve personal bests and earn recognition for their hard work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="coaches">
+
+      <h2 class="title">Meet Our Coaches</h2>
+
+      <div class="coaches-grid">
+        
+        <div class="coach">
+          <div class="img-container"></div>
+        </div>
+        <div class="coach">
+          <div class="coach-details">
+            <h5>Coach Sam</h5>
+            <p>With over 10 years of coaching experience, Coach Sam specializes in stroke technique and endurance training. His passion for swimming and dedication to helping swimmers improve make him a valuable asset to our club.</p>
+          </div>
+        </div>
+
+        <div class="coach">
+          <div class="img-container"></div>
+        </div>
+        <div class="coach">
+          <div class="coach-details">
+            <h5>Coach Sarah</h5>
+            <p>Coach Sarah is known for her expertise in sprinting and competitive swimming. She brings a wealth of knowledge and enthusiasm to our club, inspiring swimmers to push their limits and achieve their goals.</p>
+          </div>
+        </div>
+
+        <div class="coach">
+          <div class="img-container"></div>
+        </div>
+        <div class="coach">
+          <div class="coach-details">
+            <h5>Coach Alex</h5>
+            <p>Coach Alex has a background in open water swimming and is passionate about helping swimmers build confidence in various swimming environments. His coaching style focuses on technique, safety, and fostering a love for the sport.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="coaches-list">
+
+        <div class="coach">
+          <div class="img-container"></div>
+          <h5>Coach Sam</h5>
+        </div>
+        <div class="coach">
+          <div class="img-container"></div>
+          <h5>Coach Sarah</h5>
+        </div>
+        <div class="coach">
+          <div class="img-container"></div>
+          <h5>Coach Alex</h5>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="copyright">&copy; 2025 Puddle Splashers Swim Club. All rights reserved.</div>
+      <div class="copyright-mobile">&copy; 2025</div>
+      <div class="social-media">
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Instagram</a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  </body>
+</html>
